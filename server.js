@@ -4,7 +4,40 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var content={
+    title:'Article One',
+    heading:'Article one',
+    content:`<p>
+            Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.
+        </p>
+        <p>
+            Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.
+        </p>`
+};
+function createtemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var content=data.content;
+    var htmltemplate=
+    `<html>
+      <head>
+          <title>
+              ${title}
+          </title>
+      </head>  
+        <body>
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <h1>
+                ${heading}
+            </h1>
+            ${content}
+        </body>
+    </html>`
+    ;
+        return htmltemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
