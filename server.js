@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var article={
-articleone:{
+'article-one':{
     title:'Article One',
     heading:'Article one',
     content:`<p>
@@ -16,7 +16,7 @@ articleone:{
             Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.
         </p>`
 },
-   articletwo:{
+   'article-two':{
     title:'Article two',
     heading:'Article 2',
     content:`<p>
