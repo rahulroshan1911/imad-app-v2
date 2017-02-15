@@ -8,7 +8,7 @@ var article={
     title:'Article One',
     heading:'Article one',
     content:`<p>
-    rahul
+    rahul  rodsdas.dsk.ads.adsadas.dmas
             Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.Thos is the first aparagraph.
         </p>
         <p>
