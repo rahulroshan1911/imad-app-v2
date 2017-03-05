@@ -65,6 +65,7 @@ var c=0;
 app.get('/counter', function (req, res)
 {
     c++;
+    res.send(c+"");
 });
 
 app.get('/:articleName',function (req,res){
