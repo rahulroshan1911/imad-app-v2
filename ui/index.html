@@ -25,5 +25,14 @@
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
+        <script>
+            function myIP(){ var vi="uses java to get the users local ip number"
+    var yip2=java.net.InetAddress.getLocalHost();	
+    var yip=yip2.getHostAddress();
+  return yip;
+}//end myIP
+
+alert("your machine's local network IP is "+ myIP())
+        </script>
     </body>
 </html>
